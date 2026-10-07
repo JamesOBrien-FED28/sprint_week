@@ -1,25 +1,37 @@
-/*Color Palette Variables*/
+/* Color Palette Variables */
 
 :root {
     --headings: #b2dbfb;
-    --background: #533265;
+    --background: #170B1D;
     --accent: #ffe989;
     --text: #ffffff;
     --borders: #aaaaaa;
 }
 
+/* Font Family Declarations */
+
+@font-face {
+    font-family: inter;
+    src: url(./fonts/inter.ttf);
+}
+
+/* Global Style Settings */
+
 body {
     background-color: var(--background);
+    font-family: inter, Arial, Helvetica, sans-serif;
 }
 
 h1 {
     color: var(--headings);
     font-size: xx-large;
-    /* update this */
 }
 
 p {
     color: var(--text);
     font-size: medium;
-    /* update this */
+}
+
+.title {
+    text-align: center;
 }
