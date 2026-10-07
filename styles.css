@@ -24,12 +24,13 @@ body {
 
 h1 {
     color: var(--headings);
-    font-size: xx-large;
+    font-size: clamp(2rem, 3.5vw + 1rem, 3.25rem);
+    margin-bottom: 7vh;
 }
 
 p {
     color: var(--text);
-    font-size: medium;
+    font-size: clamp(1rem, 0.75vw + 0.85rem, 1.25rem);
 }
 
 .title {
