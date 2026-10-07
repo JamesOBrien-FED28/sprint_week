@@ -1,0 +1,23 @@
+/*Color Palette Variables*/
+
+:root {
+    --headings: #b2dbfb;
+    --background: #533265;
+    --accent: #ffe989;
+    --text: #ffffff;
+    --borders: #aaaaaa;
+}
+
+body {
+    background-color: var(--background);
+}
+
+h1 {
+    color: var(--headings);
+    font-size: xx-large;
+}
+
+p {
+    color: var(--text);
+    font-size: medium;
+}
