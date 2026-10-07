@@ -1,3 +1,18 @@
+/* Card Flexbox */
+.servicecards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+}
+
+/* Card Layout */
 .card {
     flex-grow: 0;
     flex-shrink: 0;
@@ -13,4 +28,46 @@
 
     border: 5px solid var(--borders);
     border-radius: 25px;
+}
+
+/* Card Background Images */
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Dark Semi-Transparent Layer Over Image */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+/* Card Text Layer (On Top of Overlay) */
+.card-title {
+    position: relative;
+    z-index: 3;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Hover Effect: Brightens video slightly when hovering over card */
+.card:hover .card-overlay {
+    background-color: rgba(0, 0, 0, 0.15);
 }
