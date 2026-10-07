@@ -15,9 +15,11 @@ body {
 h1 {
     color: var(--headings);
     font-size: xx-large;
+    /* update this */
 }
 
 p {
     color: var(--text);
     font-size: medium;
+    /* update this */
 }
