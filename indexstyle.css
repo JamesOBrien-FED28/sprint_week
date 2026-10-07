@@ -1,0 +1,30 @@
+h1{
+    font-size:clamp(4rem, 3vw, 8rem);
+    margin-top: 12%;
+    margin-left: 8%;
+    margin-right: 25%;
+}
+
+.accent{
+    color: var(--accent); 
+    font-weight: bold;
+    font-size: clamp(3rem, 2vw, 6rem);
+}
+
+p{
+    margin-top: 6%;
+    margin-left: 8%;
+    margin-right: 45%;
+    font-size: clamp(2rem, 1vw, 4rem);
+}
+.Button{
+    background-color: var(--accent);
+    padding-left: 38px;
+    padding-top: 18px;
+    padding-right: 38px;
+    padding-bottom: 18px;
+    border-radius: 30px;
+    font-size: clamp(1.2rem,1.4vw,1.8rem);
+    margin-left: 8%;
+
+    }
