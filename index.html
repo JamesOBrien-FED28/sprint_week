@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 
     <header class="navbar">
                 <div class="logo-container">
@@ -164,5 +165,122 @@
             </footer>
 
 </body>
+=======
+>>>>>>> haleema
 
+    <!-- Header Section -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="images/logoimage.png" alt="Väsby Cykel Logo" class="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="prices.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Väsby Cykel</h1>
+        <p>We fix bikes and stuff.</p>
+
+        <section class="testimonials-section">
+            <h3>REVIEWS</h3>
+            
+            <!-- Saare cards ab is container ke ANDAR hain -->
+            <div class="carousel-container" id="carousel">
+                <div class="testimonial-card">
+                    <div class="avatar-circle"><img src="images/boy1.jpg" alt="Review 1"></div>
+                    <div class="testimonial-content">
+                        <p>"It was a great experience! Services were quick,
+                             saved a lot of money and time."</p>
+                        <span>- covid19lover</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="avatar-circle"><img src="images/boy2.jpg" alt="Review 2"></div>
+                    <div class="testimonial-content">
+                        <p>"I was impressed with the professionalism
+                             and expertise of the staff. 
+                            They fixed my bike in no time!"</p>
+                        <span>- andrew tate</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="avatar-circle"><img src="images/boy3.jpg" alt="Review 3"></div>
+                    <div class="testimonial-content">
+                        <p>"I highly recommend this bike shop.
+                             They provided excellent service and made sure my bike was in
+                              top condition."</p>
+                        <span>- MR.beast</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dots (0, 1, 2 se shuru honge) -->
+            <div class="carousel-dots" id="dots-container">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <h3>Opening Hours</h3>
+            <p>
+                Monday: Closed<br>
+                Wednesday: 14:30 – 20:30<br>
+                Thursday: 14:00 – 21:00<br>
+                Friday: 14:00 – 21:00<br>
+                Saturday – Sunday: 14:30 – 21:00
+            </p>
+            <div class="footer-buttons">
+                <a href="tel: 072-844 35 16" class="footer-button">Call Us &#9742;</a>
+                <a href="mailto:vesbycykel47@gmail.com" class="footer-button">Email Us &#9993;</a>
+                <a href="#" class="footer-button">Find Us 𖡡</a>
+            </div>
+            <p class="footer-text"> &copy; 2026 Väsby Cykel. All rights reserved.</p>
+            <p class="footer-disclaimer">Student concept project by (Alma, James, Bob, Haleema), Hyper Island. Not affiliated with (väsby cykel).</p>
+        </div>
+    </footer>
+    <script>
+    let currentIndex = 0;
+    const cards = document.querySelectorAll('.testimonial-card');
+    const dots = document.querySelectorAll('.dot');
+    const totalCards = cards.length;
+
+    function showCard(index) {
+        cards.forEach((card, i) => {
+            card.style.display = (i === index) ? 'flex' : 'none';
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+    }
+
+    // every 3 seconds, show the next card
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalCards;
+        showCard(currentIndex);
+    }, 3000);
+
+    // Dots par click karne ke liye
+    function currentSlide(index) {
+        currentIndex = index;
+        showCard(currentIndex);
+    }
+
+    // to bring the first card on page load
+    showCard(currentIndex);
+</script>
+
+</body>
 </html>
