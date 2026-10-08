@@ -6,12 +6,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./indexstyle.css">
     <title>Väsby Cykel - Home</title>
 </head>
 
 <body>
-    <h1>Väsby Cykel</h1>
-    <p>We fix bikes and stuff.</p>
+
+    <header class="navbar">
+                <div class="logo-container">
+                    <img src="images/logoimage.png" alt="Väsby Cykel Logo" class="logo">
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="prices.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+    <section class="hero">
+
+        <div class="hero-content">
+             <h1>Väsby Bicycle Scooter Workshop</h1>
+             
+              <p>Professional <Span class="accent">service & repair</span> of <span class="accent">bicycles, electric bicycles and electric scooters</span> in Upplands Väsby Stockholm</p>
+        </div>
+
+
+        <img src="White bike half.svg" alt="an image of a bike" class="hero-image">
+
+
+    <div class="hero-buttons">
+         <button class="Contact-Button" aria-label="call the bike workshop">Contact us</button>
+         <button class="Find-Button" aria-label="find us on the google map">Find us</button>
+    </div>
+
+     </section>
+
+
+     <div class="service cards">
+        <div id="service" class="card">
+            <a href="./service.html" title="Information about our service.">
+                <video autoplay loop muted playsinline class="card-video" aria-hidden="true">
+                    <source src="unknown user on Pixabay.mp4" type="video/mp4">
+                </video>
+                <div class="card-overlay"></div>
+                <span class="card-title">Bicycle service</span>
+                <p class="card-description">Service and repair of various types of bicycles.</p>
+            </a>
+        </div>
+
+
+        <div id="electric-bike" class="card">
+            <a href="./service.html" title="Information about our service.">
+                <video autoplay loop muted playsinline class="card-video" aria-hidden="true">
+                    <source src="movadspro on Pixabay.mp4" type="video/mp4">
+                </video>
+                <div class="card-overlay"></div>
+                <span class="card-title">Electric bike</span>
+                <p class="card-description">Service, troubleshooting and repair of electric bicycles.</p>
+            </a>
+        </div>
+
+
+        <div id="electric-scooter" class="card">
+            <a href="./service.html" title="Information about our service.">
+                <video autoplay loop muted playsinline class="card-video" aria-hidden="true">
+                    <source src="scooter.mp4" type="video/mp4">
+                </video>
+                <div class="card-overlay"></div>
+                <span class="card-title">Electric scooter</span>
+                <p class="card-description">Repair, tire replacement and electronic troubleshooting.</p>
+            </a>
+        </div>
+
+        
+        <div id="Spare-parts" class="card">
+            <a href="./service.html" title="Information about our service.">
+                <video autoplay loop muted playsinline class="card-video" aria-hidden="true">
+                    <source src="AlfLucio on Pixabay.mp4" type="video/mp4">
+                </video>
+                <div class="card-overlay"></div>
+                <span class="card-title">Spare parts</span>
+                <p class="card-description">Spare parts and accessories for bicycles and scooters.</p>
+            </a>
+        </div>
+
+     </div>
+
+     <section class="testimonials-section">
+                    <h3>What riders say!!</h3>
+        
+                    <!-- Saare cards ab is container ke ANDAR hain -->
+                    <div class="carousel-container" id="carousel">
+                        <div class="testimonial-card">
+                            <div class="avatar-circle"><img src="images/boy1.jpg" alt="Review 1"></div>
+                            <div class="testimonial-content">
+                                <p>"It was a great experience! Services were quick,
+                                     saved a lot of money and time."</p>
+                                <span>- John Doe</span>
+                            </div>
+                        </div>
+        
+                        <div class="testimonial-card">
+                            <div class="avatar-circle"><img src="images/boy2.jpg" alt="Review 2"></div>
+                            <div class="testimonial-content">
+                                <p>"I was impressed with the professionalism
+                                     and expertise of the staff.
+                                    They fixed my bike in no time!"</p>
+                                <span>- Jane Smith</span>
+                            </div>
+                        </div>
+        
+                        <div class="testimonial-card">
+                            <div class="avatar-circle"><img src="images/boy3.jpg" alt="Review 3"></div>
+                            <div class="testimonial-content">
+                                <p>"I highly recommend this bike shop.
+                                     They provided excellent service and made sure my bike was in
+                                      top condition."</p>
+                                <span>- Mike Johnson</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Dots (0, 1, 2 se shuru honge) -->
+                    <div class="carousel-dots" id="dots-container">
+                        <span class="dot active" onclick="currentSlide(0)"></span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                </section>
+            </main>
+
+
+     <footer>
+                <div class="footer-content">
+                    <h3>Opening Hours</h3>
+                    <p>
+                        Monday: Closed<br>
+                        Wednesday: 14:30 – 20:30<br>
+                        Thursday: 14:00 – 21:00<br>
+                        Friday: 14:00 – 21:00<br>
+                        Saturday – Sunday: 14:30 – 21:00
+                    </p>
+                    <div class="footer-buttons">
+                        <a href="tel: 072-844 35 16" class="footer-button">Call Us &#9742;</a>
+                        <a href="mailto:vesbycykel47@gmail.com" class="footer-button">Email Us &#9993;</a>
+                        <a href="#" class="footer-button">Find Us 𖡡</a>
+                    </div>
+                    <p class="footer-text"> &copy; 2026 Väsby Cykel. All rights reserved.</p>
+                    <p class="footer-disclaimer">Student concept project by (Alma, James, Bob, Haleema), Hyper Island. Not affiliated with (väsby cykel).</p>
+                </div>
+            </footer>
+
 </body>
 
 </html>

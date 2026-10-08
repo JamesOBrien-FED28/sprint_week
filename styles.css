@@ -30,9 +30,6 @@ h1 {
 
 p {
     color: var(--text);
-    font-size: clamp(1rem, 0.75vw + 0.85rem, 1.25rem);
-}
-
-.title {
-    text-align: center;
+    font-size: medium;
+    /* update this */
 }
