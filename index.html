@@ -31,7 +31,7 @@
         <p>We fix bikes and stuff.</p>
 
         <section class="testimonials-section">
-            <h3>What riders say!!</h3>
+            <h3>REVIEWS</h3>
             
             <!-- Saare cards ab is container ke ANDAR hain -->
             <div class="carousel-container" id="carousel">
@@ -40,7 +40,7 @@
                     <div class="testimonial-content">
                         <p>"It was a great experience! Services were quick,
                              saved a lot of money and time."</p>
-                        <span>- John Doe</span>
+                        <span>- covid19lover</span>
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@
                         <p>"I was impressed with the professionalism
                              and expertise of the staff. 
                             They fixed my bike in no time!"</p>
-                        <span>- Jane Smith</span>
+                        <span>- andrew tate</span>
                     </div>
                 </div>
 
@@ -60,7 +60,7 @@
                         <p>"I highly recommend this bike shop.
                              They provided excellent service and made sure my bike was in
                               top condition."</p>
-                        <span>- Mike Johnson</span>
+                        <span>- MR.beast</span>
                     </div>
                 </div>
             </div>
@@ -78,13 +78,20 @@
     <footer>
         <div class="footer-content">
             <h3>Opening Hours</h3>
-            <p>mon-sat 9:00AM-5:00PM</p>
+            <p>
+                Monday: Closed<br>
+                Wednesday: 14:30 – 20:30<br>
+                Thursday: 14:00 – 21:00<br>
+                Friday: 14:00 – 21:00<br>
+                Saturday – Sunday: 14:30 – 21:00
+            </p>
             <div class="footer-buttons">
-                <a href="tel:+123456789" class="footer-button">Call Us &#9742;</a>
-                <a href="mailto:info@väsbycykel.se" class="footer-button">Email Us &#9993;</a>
+                <a href="tel: 072-844 35 16" class="footer-button">Call Us &#9742;</a>
+                <a href="mailto:vesbycykel47@gmail.com" class="footer-button">Email Us &#9993;</a>
                 <a href="#" class="footer-button">Find Us 𖡡</a>
             </div>
             <p class="footer-text"> &copy; 2026 Väsby Cykel. All rights reserved.</p>
+            <p class="footer-disclaimer">Student concept project by (Alma, James, Bob, Haleema), Hyper Island. Not affiliated with (väsby cykel).</p>
         </div>
     </footer>
     <script>
@@ -102,7 +109,7 @@
         });
     }
 
-    // Har 3 second ke baad agla review aayega
+    // every 3 seconds, show the next card
     setInterval(() => {
         currentIndex = (currentIndex + 1) % totalCards;
         showCard(currentIndex);
@@ -114,7 +121,7 @@
         showCard(currentIndex);
     }
 
-    // Pehla card shuru mein show karne ke liye
+    // to bring the first card on page load
     showCard(currentIndex);
 </script>
 
