@@ -1,42 +1,42 @@
-
 /* *************************************************************************************************
    Hero Section
 ************************************************************************************************* */
 
-h1{
-    font-size:clamp(4rem, 3vw, 8rem);
+.hero-text {
+    font-size: clamp(4rem, 3vw, 8rem);
     margin-top: 12%;
     margin-left: 8%;
     margin-right: 25%;
 }
 
-.accent{
-    color: var(--accent); 
+.accent {
+    color: var(--accent);
     font-weight: bold;
     font-size: clamp(3rem, 2vw, 6rem);
 }
 
-p{
+.hero-p {
     margin-top: 6%;
     margin-left: 8%;
     margin-right: 45%;
     font-size: clamp(2rem, 1vw, 4rem);
 }
-.Contact-Button{
+
+.Contact-Button {
     background-color: var(--accent);
     padding-left: 36px;
     padding-top: 18px;
     padding-right: 36px;
     padding-bottom: 22px;
     border-radius: 30px;
-    font-size: clamp(1.2rem,1.4vw,1.8rem);
+    font-size: clamp(1.2rem, 1.4vw, 1.8rem);
     margin-left: 8%;
     margin-top: 4%;
     transition: 0.3s;
 
-    }
+}
 
-.Find-Button{
+.Find-Button {
     background-color: var(--background);
     color: var(--accent);
     border: solid 1px;
@@ -45,19 +45,19 @@ p{
     padding-right: 44px;
     padding-bottom: 22px;
     border-radius: 30px;
-    font-size: clamp(1.2rem,1.4vw,1.8rem);
+    font-size: clamp(1.2rem, 1.4vw, 1.8rem);
     margin-left: 5%;
     margin-top: 4%;
     transition: 0.3s;
 }
 
-.Contact-Button:hover{
+.Contact-Button:hover {
     box-shadow: inset 0 0 12px var(--headings);
     background-color: var(--background);
     color: var(--accent);
 }
 
-.Find-Button:hover{
+.Find-Button:hover {
     box-shadow: inset 0 0 12px var(--accent);
 }
 
@@ -96,6 +96,7 @@ p{
     border: 1px solid var(--headings);
     border-radius: 25px;
 }
+
 /* Card Video Background */
 .card-video {
     position: absolute;
@@ -106,6 +107,7 @@ p{
     object-fit: cover;
     z-index: 1;
 }
+
 /* Dark Semi-Transparent Layer Over Video */
 .card-overlay {
     position: absolute;
@@ -117,6 +119,7 @@ p{
     z-index: 2;
     transition: background-color 0.3s ease;
 }
+
 /* Card Text Layer (On Top of Overlay) */
 .card-title {
     position: relative;
@@ -141,6 +144,7 @@ p{
     margin: 1rem auto 0;
     max-width: 300px;
 }
+
 /* Hover Effect: Brightens video slightly when hovering over card */
 .card:hover .card-overlay {
     background-color: rgba(0, 0, 0, 0.18);
@@ -151,7 +155,7 @@ p{
 ************************************************************************************************* */
 
 @media (max-width: 900px) {
-    h1 {
+    .hero-text {
         font-size: clamp(3rem, 5vw, 5rem);
         margin-top: 10%;
         margin-left: 7%;
@@ -162,7 +166,7 @@ p{
         font-size: inherit;
     }
 
-    p {
+    .hero-p {
         margin-top: 5%;
         margin-left: 7%;
         margin-right: 40%;
@@ -257,6 +261,7 @@ p{
         align-self: flex-end;
         object-fit: contain;
     }
+
     .service.cards {
         flex-direction: column;
         gap: 2rem;
@@ -268,34 +273,34 @@ p{
         flex: 1 1 100%;
         width: 100%;
     }
-    }
+}
 
 
-    /*********************** Testimonials Section Styling ***************/
+/*********************** Testimonials Section Styling ***************/
 .testimonials-section {
     padding: 25px 20px;
     background-color: #121212;
     text-align: center;
     border-top: 1px solid var(--borders);
     margin-top: 40px;
-    }
-    
-    .testimonials-content {
+}
+
+.testimonials-content {
     flex: 1;
-    }
-    
-    .testimonials-section h3 {
+}
+
+.testimonials-section h3 {
     font-size: 24px;
     color: var(--headings);
     margin-bottom: 30px;
-    }
-    
-    .carousel-container {
+}
+
+.carousel-container {
     display: flex;
     overflow: hidden;
     scroll-snap-type: x mandatory;
     gap: 20px;
-    width:85%;
+    width: 85%;
     scrollbar-width: thin;
     scroll-behavior: smooth;
     max-width: 500px;
@@ -304,17 +309,17 @@ p{
     width: 100%;
     max-width: 650px;
     margin: 0 auto 15px auto;
-    }
-    
-    .carousel-container::-webkit-scrollbar {
+}
+
+.carousel-container::-webkit-scrollbar {
     display: none;
-    }
-    
-    /*********************** Testimonials Section Styling ***************/
-    
-    
-    
-    .testimonial-card {
+}
+
+/*********************** Testimonials Section Styling ***************/
+
+
+
+.testimonial-card {
     flex: 0 0 100%;
     background-color: #1E1E1E;
     border-radius: 10px;
@@ -327,45 +332,45 @@ p{
     scroll-snap-align: center;
     box-sizing: border-box;
     border: 1px solid var(--borders);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    
-    .avatar-circle {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-circle {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
     border: 2px solid var(--accent);
-    }
-    
-    .avatar-circle img {
+}
+
+.avatar-circle img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    }
-    
-    .testimonial-content p {
+}
+
+.testimonial-content p {
     color: var(--text);
     font-size: 16px;
     font-style: italic;
     margin-bottom: 8px;
-    }
-    
-    .testimonial-content span {
+}
+
+.testimonial-content span {
     color: var(--accent);
     font-weight: bold;
     font-size: 14px;
-    }
-    
-    /* Dots Navigation Styling */
-    .carousel-dots {
+}
+
+/* Dots Navigation Styling */
+.carousel-dots {
     display: flex;
     justify-content: center;
     gap: 8px;
-    }
-    
-    .dot {
+}
+
+.dot {
     width: 10px;
     height: 10px;
     background-color: var(--borders);
@@ -373,8 +378,8 @@ p{
     cursor: pointer;
     display: inline-block;
     transition: background-color 0.3s;
-    }
-    
-    .dot.active {
+}
+
+.dot.active {
     background-color: var(--accent);
-    }
+}
