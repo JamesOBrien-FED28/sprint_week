@@ -76,19 +76,24 @@ p{
 /* *************************************************************************************************
    Homepage Cards section
 ************************************************************************************************* */
-
+.service.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 5rem 7% 0;
+    margin-bottom: 7%;
+    margin-top: 7%;
+}
 
 .card {
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: calc(50% - 2rem);
+    flex: 1 1 calc(25% - 2rem);
+    min-width: 0;
     height: 300px;
-    margin: 1rem;
     padding: 20px;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
-    border: 3px solid var(--accent);
+    border: 1px solid var(--headings);
     border-radius: 25px;
 }
 /* Card Video Background */
@@ -108,7 +113,7 @@ p{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.55);
     z-index: 2;
     transition: background-color 0.3s ease;
 }
@@ -122,12 +127,23 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100%;
+    padding-top: 10%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.card-description {
+    position: relative;
+    z-index: 3;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
+    margin: 1rem auto 0;
+    max-width: 300px;
 }
 /* Hover Effect: Brightens video slightly when hovering over card */
 .card:hover .card-overlay {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.18);
 }
 
 /* *************************************************************************************************
@@ -168,6 +184,16 @@ p{
     .Find-Button {
         font-size: 1.1rem;
         padding: 14px 28px 17px;
+    }
+
+    .service.cards {
+        gap: 2rem;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 2rem);
     }
 }
 
@@ -230,5 +256,16 @@ p{
         height: auto;
         align-self: flex-end;
         object-fit: contain;
+    }
+    .service.cards {
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        width: 100%;
     }
     }
